@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "Classic White T-Shirt",
+    "slug": "classic-white-t-shirt",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1649845158/tgv3azwturbdxzpwqrpq.jpg",
+    "price": 20,
+    "description": "A timeless essential, this classic white t-shirt is crafted from soft, breathable cotton. It features a relaxed fit and reinforced stitching for durability, making it perfect for layering or wearing on its own for a clean, casual look."
+  },
+  {
+    "id": "2",
+    "name": "Slim Fit Jeans",
+    "slug": "slim-fit-jeans",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1705143773/martiful/boy_a2szxc.png",
+    "price": 65,
+    "description": "These slim fit jeans are designed with a modern silhouette that hugs the legs without feeling restrictive. Made from a premium denim blend with a hint of stretch, they provide exceptional comfort and retain their shape wear after wear."
+  },
+  {
+    "id": "3",
+    "name": "Denim Jacket",
+    "slug": "denim-jacket",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1649840442/dcqtgzeze30soy2jfoqn.jpg",
+    "price": 90,
+    "description": "Our classic denim jacket is a versatile wardrobe staple. It features a button-up front, multiple pockets, and a slightly faded wash for a lived-in look. Perfect for layering over tees, shirts, or hoodies in any season."
+  },
+  {
+    "id": "4",
+    "name": "Hooded Sweatshirt",
+    "slug": "hooded-sweatshirt",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1721048407/1721048406623.jpg",
+    "price": 55,
+    "description": "Stay cozy and stylish with this hooded sweatshirt made from ultra-soft fleece. It has a spacious front pocket, adjustable drawstring hood, and ribbed cuffs and hem. Ideal for casual outings or relaxing at home."
+  },
+  {
+    "id": "5",
+    "name": "Chino Shorts",
+    "slug": "chino-shorts",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1705260800/1705260800259.jpg",
+    "price": 40,
+    "description": "Perfect for warm weather, these chino shorts offer a classic fit and lightweight comfort. Crafted from breathable cotton twill with subtle stretch, they feature side pockets and a tailored waistband for a polished yet relaxed look."
+  },
+  {
+    "id": "6",
+    "name": "Floral Print Dress",
+    "slug": "floral-print-dress",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1627086107/shgtwhvlntsz3ztfxwou.jpg",
+    "price": 75,
+    "description": "This feminine floral print dress is designed with a flattering A-line silhouette that gently drapes over the body. Made from a soft, flowy fabric, it features delicate ruffle details and a tie waist, making it perfect for brunch dates or garden parties."
+  },
+  {
+    "id": "7",
+    "name": "Wool Overcoat",
+    "slug": "wool-overcoat",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1649840442/dcqtgzeze30soy2jfoqn.jpg",
+    "price": 180,
+    "description": "Elevate your outerwear collection with this sophisticated wool overcoat. Tailored for a sleek fit, it features a classic notch lapel, button closure, and smooth lining for easy layering over suits or casual outfits during cooler months."
+  },
+  {
+    "id": "8",
+    "name": "Athletic Joggers",
+    "slug": "athletic-joggers",
+    "image": "https://res.cloudinary.com/dxjprordi/image/upload/v1649845158/tgv3azwturbdxzpwqrpq.jpg",
+    "price": 50,
+    "description": "Our athletic joggers combine performance and comfort with a modern tapered fit. Made from moisture-wicking fabric, they feature an elastic waistband with drawcord, zippered pockets, and ribbed cuffs, perfect for workouts or casual days."
+  }
+]
