@@ -1,28 +1,25 @@
 "use client";
 
 import { Search } from "lucide-react";
-import { useState } from "react";
+import { useGlobalStore } from "@/lib/globalStore";
 
 export default function SearchBar() {
-    const [query, setQuery] = useState("");
+    const updateSearchQuery = useGlobalStore((s) => s.updateSearchQuery);
 
-    const handleSearch = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log("Searching for:", query);
-        // Implement search functionality here
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        updateSearchQuery(e.target.value);
     };
 
     return (
         <form
-            onSubmit={handleSearch}
+            onSubmit={(e) => e.preventDefault()}
             className="flex items-center border border-gray-300 rounded-full overflow-hidden w-full max-w-xl shadow-[0_1px_3px_rgba(0,0,0,0.1)] focus-within:border-purple-500 transition"
         >
             <input
                 type="text"
                 placeholder="Search products..."
                 className="flex-1 px-4 py-2 text-sm placeholder-gray-400 focus:outline-none"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                onChange={handleChange}
             />
             <button
                 type="submit"
