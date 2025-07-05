@@ -24,6 +24,7 @@ export default function Header() {
             <div className="container mx-auto flex justify-between items-center py-4 px-2 lg:px-4">
                 <Link href="/" className="flex items-center space-x-2">
                     <Image
+                        loading="lazy"
                         src="https://res.cloudinary.com/dxjprordi/image/upload/v1751667140/martiful/shopping-logo-png_l9pwye.jpg"
                         alt="Logo"
                         width={50}

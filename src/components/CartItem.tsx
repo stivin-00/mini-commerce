@@ -15,6 +15,7 @@ export default function CartItem({ item }: { item: CartItemType }) {
         <div className="flex flex-col sm:flex-row items-center bg-white rounded-2xl shadow p-4 gap-4">
             <div className="relative w-24 h-24 flex-shrink-0 rounded overflow-hidden">
                 <Image
+                    loading="lazy"
                     src={item.image}
                     alt={item.name}
                     fill
