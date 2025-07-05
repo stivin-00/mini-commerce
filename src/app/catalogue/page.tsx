@@ -7,6 +7,7 @@ import { Product } from "@/types";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useGlobalStore } from "@/lib/globalStore";
+import SearchBar from "@/components/SearchBar";
 
 export default function CataloguePage() {
     const { data, error, isLoading } = useQuery<Product[]>({
@@ -26,6 +27,9 @@ export default function CataloguePage() {
     return (
         <div>
             <h1 className="text-3xl font-bold mb-6">Catalogue</h1>
+            <div className="py-4 w-full flex md:hidden">
+                <SearchBar />
+            </div>
             {filteredProducts?.length === 0 ? (
                 <div className="text-center mt-20">
                     <p className="text-gray-500 font-bold text-lg">No products found for &quot;{searchQuery}&quot;.</p>
