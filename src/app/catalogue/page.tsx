@@ -21,7 +21,7 @@ export default function CataloguePage() {
     );
 
     if (isLoading) return <SuspenseElement isPageLoader />;
-    if (error) return <ErrorElement message="Failed to load products." />;
+    if (error) return <ErrorElement message={error.message || "Failed to load products"} />;
 
     return (
         <div>

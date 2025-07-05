@@ -25,14 +25,14 @@ export default function Header() {
                 <Link href="/" className="flex items-center space-x-2">
                     <Image
                         loading="lazy"
-                        src="https://res.cloudinary.com/dxjprordi/image/upload/v1751667140/martiful/shopping-logo-png_l9pwye.jpg"
+                        src="https://res.cloudinary.com/dxjprordi/image/upload/v1751701045/martiful/shopping_v5l1nc.png"
                         alt="Logo"
-                        width={50}
-                        height={50}
+                        width={30}
+                        height={30}
                         className="rounded"
                     />
                     <span className="text-2xl font-bold text-purple-600 hidden sm:inline">
-                        Mini
+                        Mini-Commerce
                     </span>
                 </Link>
 

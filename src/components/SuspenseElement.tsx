@@ -13,7 +13,6 @@ const SuspenseElement = ({ isPageLoader = true }: SuspenseElementProps) => {
                 }`}
         >
             <Image
-                loading="lazy"
                 src="/assets/action_loading.svg"
                 alt="Loading..."
                 width={224}
