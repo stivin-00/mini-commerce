@@ -24,7 +24,7 @@ export default function CartItem({ item }: { item: CartItemType }) {
                 />
             </div>
 
-            <div className="flex-1 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex-1 w-full flex flex-row sm:items-center justify-between gap-4">
                 <div className="flex-1">
                     <p className="text-lg font-semibold text-gray-900 mb-1">
                         {item.name}
