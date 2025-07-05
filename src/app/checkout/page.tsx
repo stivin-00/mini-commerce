@@ -16,7 +16,7 @@ export default function CheckoutPage() {
 
     const placeOrder = () => {
         clearCart();
-        router.push(`/checkout/success?order=₦{Math.floor(Math.random() * 1000000)}`);
+        router.push(`/checkout/success?order=${Math.floor(Math.random() * 1000000)}`);
     };
 
     if (cartItems.length === 0) {
