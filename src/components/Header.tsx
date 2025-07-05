@@ -36,13 +36,13 @@ export default function Header() {
                 </Link>
 
                 {pathname === "/catalogue" && (
-                    <div className="flex-1 mx-4 hidden md:block">
+                    <div className="flex-1 mx-4 hidden md:flex  items-center justify-center">
                         <SearchBar />
                     </div>
                 )}
 
                 <nav className="hidden md:flex items-center space-x-6">
-                    <Link href="/catalogue" className="hover:text-purple-600">Catalogue</Link>
+                    <Link href="/catalogue" className="hover:text-purple-600 font-semibold">Catalogue</Link>
                     <Link href="/cart" className="relative hover:text-purple-600">
                         <ShoppingCart className="w-6 h-6" />
 
