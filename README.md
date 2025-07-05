@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mini-Commerce 🛒
 
-## Getting Started
+A tiny, client-side e-commerce prototype built with Next.js 14, React Query, Zustand, and Tailwind CSS.
 
-First, run the development server:
+---
+
+## Project Overview
+
+Mini-Commerce lets users browse a catalog of products, view product details, add items to a persistent cart, and complete a mock checkout with an order success page. All state survives page reloads using localStorage.
+
+Key features:
+
+- Catalogue page all products and search feature
+- Product detail pages with add-to-cart
+- Cart with quantity adjustments, remove, subtotal calculation
+- Checkout flow with order confirmation
+- Responsive design and SEO-friendly pages
+
+---
+
+## Design Approach
+
+- **Layout**: Mobile-first responsive grid/flex layouts.
+- **Colors**: Neutral base + indigo (`bg-purple-600`) for buttons and highlights.
+- **Typography**: Tailwind’s default font stack.
+- **Responsiveness**: Grid adapts from 1 column → 2 → 3 based on screen size, Responsive Header.
+- **UX**: Sticky header, hover/focus feedback, clear cart actions.
+
+---
+
+## Tools & Techniques
+
+- **Framework & Language**: Next.js with TypeScript (strict).
+- **Styling**: Tailwind CSS.
+- **State Management**: Zustand with localStorage persistence.
+- **Data Fetching**: React Query for local JSON products.
+- **Testing**: Jest + React Testing Library.
+- **Code Quality**: ESLint + Prettier.
+- **CI**: GitHub Actions (optional recommended).
+
+---
+
+## SEO Strategy
+
+- **Meta Tags** & **Open Graph** in `layout.tsx`.
+- **Structured Data**: JSON-LD basics.
+- **Image Optimization**: `next/image`.
+- **Performance**: Lazy loading images; Suspense for smoother UX.
+
+---
+
+## Error-Handling Technique
+
+- **Catalogue Loading**: React Query shows loading/error messages.
+- **Cart Edge Cases**: Disables invalid quantity updates.
+- **Unknown Routes**: Custom 404 page with call-to-action.
+- **UI Logging**: Errors surfaced with clear, user-friendly messages.
+
+---
+
+## Project Structure Highlights
+
+- `/app` → App Router pages (catalogue, product, cart, checkout)
+- `/components` → UI components (Header, ProductCard, etc.)
+- `/lib` → Zustand store & React Query client
+- `/public` → Static `products.json` & images
+- `/types` → Strongly-typed interfaces
+
+---
+
+## ▶️ Getting Started
+
+Follow these steps to run the project locally:
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/<your-github-repo>.git
+cd mini-commerce
+```
+
+### 2) Install Dependencies
+
+```bash
+npm install
+```
+
+### 3) Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4) Build for production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5) Run tests
 
-## Learn More
+```bash
+npm run test
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ **Live Demo**: [[mini-commerce-stivin.vercel.app/](https://mini-commerce-stivin.vercel.app/)]  
+✅ **GitHub Repo**: [[github.com/stivin-00/mini-commerce](https://github.com/stivin-00/mini-commerce)]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
